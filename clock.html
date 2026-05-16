@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Timezone Clock - Flight Trip Support</title>
+    <link rel="stylesheet" href="clock-style.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="header">
+            <h1>✈️ World Time Zones</h1>
+            <p>Real-time clock for flight planning across time zones</p>
+        </div>
+
+        <div class="timezone-selector">
+            <label for="add-timezone">Add Timezone:</label>
+            <select id="add-timezone">
+                <option value="">Select a timezone...</option>
+                <option value="UTC">UTC (Coordinated Universal Time)</option>
+                <option value="America/New_York">EST - New York</option>
+                <option value="America/Chicago">CST - Chicago</option>
+                <option value="America/Denver">MST - Denver</option>
+                <option value="America/Los_Angeles">PST - Los Angeles</option>
+                <option value="Europe/London">GMT - London</option>
+                <option value="Europe/Paris">CET - Paris</option>
+                <option value="Europe/Moscow">MSK - Moscow</option>
+                <option value="Asia/Dubai">GST - Dubai</option>
+                <option value="Asia/Kolkata">IST - India</option>
+                <option value="Asia/Bangkok">ICT - Bangkok</option>
+                <option value="Asia/Shanghai">CST - Shanghai</option>
+                <option value="Asia/Tokyo">JST - Tokyo</option>
+                <option value="Asia/Hong_Kong">HKT - Hong Kong</option>
+                <option value="Asia/Singapore">SGT - Singapore</option>
+                <option value="Australia/Sydney">AEDT - Sydney</option>
+                <option value="Australia/Melbourne">AEDT - Melbourne</option>
+                <option value="Pacific/Auckland">NZDT - New Zealand</option>
+                <option value="America/Toronto">EST - Toronto</option>
+                <option value="America/Mexico_City">CST - Mexico City</option>
+                <option value="America/Sao_Paulo">BRT - São Paulo</option>
+                <option value="Africa/Johannesburg">SAST - Johannesburg</option>
+                <option value="Africa/Cairo">EET - Cairo</option>
+            </select>
+            <button id="add-btn">Add Clock</button>
+        </div>
+
+        <div class="clocks-grid" id="clocks-container">
+            <!-- Clocks will be added here dynamically -->
+        </div>
+
+        <div class="default-message" id="default-message">
+            <p>Select and add time zones to display clocks</p>
+        </div>
+    </div>
+
+    <script src="clock-script.js"></script>
+</body>
+</html>
